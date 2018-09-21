@@ -200,7 +200,7 @@
 
 .logo-container .brand{
     font-size: 18px;
-    color: #FFFFFF;
+    color: black;
     line-height: 20px;
     float: left;
     margin-left: 10px;
@@ -225,7 +225,8 @@
     min-height: 600px;
 }
 .demo-header-image{
-    background-image: url('../paper_img/city.jpg');
+    background-image: url('../img/img-magic.jpg');
+  
 }
 .demo-header .motto{
     color: #FFFFFF;
@@ -926,6 +927,7 @@
     fill: #75c3b6;
 }
 .navbar-header{
+   
     min-width: 120px;
 }
 #notifications{
