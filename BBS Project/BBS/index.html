@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Ichor</title>
+    <title>BBS</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
@@ -16,6 +16,10 @@
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -30,7 +34,7 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                 </button>
-                <a href="#" class="navbar-brand">Ichor</a>
+                <a href="#" class="navbar-brand">BBS</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
@@ -56,22 +60,39 @@
                 <div class="content">
                     <div class="title-area">
                         <p>Welcome to</p>
-                        <h1 class="title-modern">Ichor</h1>
-                        <h3 class="title-modern">Ichor is online blood bank system</h3>
+                        <h1 class="title-modern">BBS</h1>
+                        <h3 class="title-modern">The online blood bank system</h3>
                         <div class="separator line-separator">♦</div>
                     </div>
 
                     <div class="button-get-started">
-                        <a href="#" target="_blank" class="btn btn-white btn-fill btn-lg ">
+                        <!-- <a href="search.html"  class="btn btn-white btn-fill btn-lg js-open-modal">
                             Search for doner
-                        </a>
+                        </a> -->
+                        <a href="#" class="js-open-modal btn btn-white btn-fill btn-lg">Search for donor</a>
+                        <div id="modal" class="modal"> <!--OVerlay-->
+
+                          <div class="overlay-content">
+                            <form action="#">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                              <select>
+                                <option>Choose Blood Type</option>
+                                <option value="O+">O+</option>
+                                <option value="A+">O+</option>
+                                <option value="A-">A-</option>
+                                <option value="AB+">Ab+</option>
+                              </select>
+                            </form>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-   
+
     <div class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
             <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
@@ -136,7 +157,7 @@
                                                 </div>
                                                 <div class="description">
                                                     <br>
-                                                    <h3 class="title">Abdullah</h3>                                                    
+                                                    <h3 class="title">Abdullah</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,10 +173,10 @@
     </div>
 
     <footer class="footer footer-big footer-color-black" data-color="black">
-        <div class="container">                
+        <div class="container">
             <hr>
             <div class="copyright">
-                 © <script> document.write(new Date().getFullYear()) </script> Ichor , made with love 
+                 © <script> document.write(new Date().getFullYear()) </script> BBS , made with love
             </div>
         </div>
     </footer>
@@ -174,5 +195,8 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  src="js/search.js"></script>
+
 
 </html>
